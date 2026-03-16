@@ -20,6 +20,7 @@
         <div class="alert alert-danger"><?php echo $_SESSION['error']; unset($_SESSION['error']); ?></div>
     <?php endif; ?>
 
+    <?php $users = isset($users) && is_array($users) ? $users : []; ?>
     <?php if (count($users) === 0): ?>
         <div class="alert alert-info">Nenhum usuário encontrado.</div>
     <?php else: ?>
