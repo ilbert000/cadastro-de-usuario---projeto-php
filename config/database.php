@@ -22,7 +22,7 @@ class Database {
             }
 
             $host = $env['DB_HOST'] ?? 'localhost';
-            $db   = $env['DB_NAME'] ?? 'cadastro-de-usuarios---projeto-php';
+            $db   = $env['DB_NAME'] ?? 'usuarios_system';
             $user = $env['DB_USER'] ?? 'root';
             $pass = $env['DB_PASS'] ?? '';
 
